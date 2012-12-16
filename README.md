@@ -41,19 +41,25 @@ JavaScript:
 -  'nicEdit' : false activate nicEdit editor by setting it to true
 -  'savingTxt' : 'saving...' set your own saving action text
 
+CSS
 
+	.dc2eEditor {
+	  padding: 10px;
+	  width: 100%
+	}
+	
 SAVE.PHP:
 
-	    <?php
+	<?php
 	
-	    $id = $_POST['id'];
-	    $text = $_POST['text'];
+	$id = $_POST['id'];
+	$text = $_POST['text'];
 	
-	    // checking against injections, saving to database and whatever else
+	// checking against injections, saving to database and whatever else
 	
-	    print "id: $id\n\ntext:\n$text";
+	print "id: $id\n\ntext:\n$text";
 	
-	    ?>
+	?>
 			
 
 See examples and demos: http://www.dima.fi/jquery/dblclk2edit/
