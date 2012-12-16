@@ -14,50 +14,49 @@ I came to the situation, that many of other inline editors annoys me by saving a
 
 How to use?
 -----------
-  Download using *Save link as..* or *wget* and add *&lt;script src="jquery.dblclk2edit.min.js"&gt;&lt;/script&gt;* after jquery.js
-  Then activate text you want to be editable.
+Download using *Save link as..* or *wget* and add *&lt;script src="jquery.dblclk2edit.min.js"&gt;&lt;/script&gt;* after jquery.js
+Then activate text you want to be editable.
 
-  HTML:
+HTML:
 
-    <div id="editabletext">You can edit me</div>
-  		
+	<div id="editabletext">You can edit me</div>  		
 
-  JavaScript:
+JavaScript:
 
-    $(document).ready(function() {
+	$(document).ready(function() {
   
-      $('#editabletext').dblclk2edit({
-        'postTo'    : 'save.php',
-        'postIdVal' : 'auto',
-        'textarea'  : false,
-        'nicEdit'   : false,
-        'savingTxt' : 'saving...'
-      });
+	      $('#editabletext').dblclk2edit({
+	        'postTo'    : 'save.php',
+	        'postIdVal' : 'auto',
+	        'textarea'  : false,
+	        'nicEdit'   : false,
+	        'savingTxt' : 'saving...'
+	      });
     
-    });
+	});
 	
-  'postTo' : 'save.php' file to send data via POST, default is 'save.php'
-  'postIdVal' : 'auto' you can set your own identification value here, by default it uses text holder's id like #editabletext. Default is 'auto'
-  'textarea' : false activate textarea by setting it to true, by default it uses input box
-  'nicEdit' : false activate nicEdit editor by setting it to true
-  'savingTxt' : 'saving...' set your own saving action text
+-  'postTo' : 'save.php' file to send data via POST, default is 'save.php'
+-  'postIdVal' : 'auto' you can set your own identification value here, by default it uses text holder's id like #editabletext. Default is 'auto'
+-  'textarea' : false activate textarea by setting it to true, by default it uses input box
+-  'nicEdit' : false activate nicEdit editor by setting it to true
+-  'savingTxt' : 'saving...' set your own saving action text
 
 
-  SAVE.PHP:
+SAVE.PHP:
 
-    <?php
-
-    $id = $_POST['id'];
-    $text = $_POST['text'];
-
-    // checking against injections, saving to database and whatever else
-
-    print "id: $id\n\ntext:\n$text";
-
-    ?>
+	    <?php
+	
+	    $id = $_POST['id'];
+	    $text = $_POST['text'];
+	
+	    // checking against injections, saving to database and whatever else
+	
+	    print "id: $id\n\ntext:\n$text";
+	
+	    ?>
 			
 
-  See examples and demos: http://www.dima.fi/jquery/dblclk2edit/
+See examples and demos: http://www.dima.fi/jquery/dblclk2edit/
 
 
 
