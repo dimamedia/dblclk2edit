@@ -12,9 +12,9 @@ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.p
 I came to the situation, that many of other inline editors annoys me by saving and closing editors if I accidentally click somewhere else or if I want to keep editor open while pasting text multiple times. So I created own solution of inline/in place editor. Just doubleclick on editable text to edit it and doubleklick it again to save!
 
 
-HOW TO USE?
-
-  Download using Save link as.. or wget and add <script src="jquery.dblclk2edit.min.js"></script> after jquery.js
+How to use?
+-----------
+  Download using *Save link as..* or *wget* and add *&lt;script src="jquery.dblclk2edit.min.js"&gt;&lt;/script&gt;* after jquery.js
   Then activate text you want to be editable.
 
   HTML:
